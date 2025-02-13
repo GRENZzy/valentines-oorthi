@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoorthi, Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?roses,tulips,hearts') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background: #ff4d6d;
+            color: white;
+        }
+
+        .yes:hover {
+            background: #ff1a4c;
+        }
+
+        .absolutely {
+            background: #ffcc00;
+            color: black;
+        }
+
+        .absolutely:hover {
+            background: #ffb700;
+        }
+
+        .hidden {
+            display: none;
+            font-size: 1.8em;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Spoorthi, Will You Be My Valentine? ❤️</h1>
+        <div class="buttons">
+            <button class="yes" onclick="showMessage()">Yes</button>
+            <button class="absolutely" onclick="showMessage()">Absolutely Yes</button>
+        </div>
+        <p id="response" class="hidden">Yay! I knew you'd say yes, Spoorthi! 💖🌷🌹</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('response').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
